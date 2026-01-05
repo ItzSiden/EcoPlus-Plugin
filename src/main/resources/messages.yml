@@ -1,0 +1,58 @@
+# ========================================
+#           EcoPlus Messages
+# ========================================
+# Available placeholders:
+# {prefix} - Plugin prefix
+# {player} - Player name
+# {amount} - Amount of currency
+# {balance} - Player's balance
+# {currency} - Currency name
+# {symbol} - Currency symbol
+
+# General Messages
+no-permission: "{prefix} &cYou don't have permission to use this command."
+player-not-found: "{prefix} &cPlayer '{player}' not found."
+invalid-amount: "{prefix} &cInvalid amount. Please enter a valid number."
+must-be-positive: "{prefix} &cAmount must be greater than 0."
+console-specify-player: "{prefix} &cConsole must specify a player name."
+unknown-command: "{prefix} &cUnknown subcommand. Use /ecoplus for help."
+plugin-reloaded: "{prefix} &aEcoPlus has been reloaded successfully!"
+
+# Balance Command
+balance-self: "{prefix} &aYour balance: &e{amount} {symbol} {currency}"
+balance-other: "{prefix} &a{player}'s balance: &e{amount} {symbol} {currency}"
+
+# Baltop Command
+baltop-header: "&6═══════════════════════════════\n&6      Top {count} Richest Players\n&6═══════════════════════════════"
+baltop-entry: "{rank_color}#{rank} &a{player} &8- &e{amount} {symbol}"
+baltop-footer: "&6═══════════════════════════════"
+baltop-empty: "{prefix} &eNo player data available."
+
+# Add Command
+add-success: "{prefix} &aAdded &e{amount} {symbol} {currency} &ato {player}'s balance."
+add-new-balance: "{prefix} &aNew balance: &e{balance} {symbol} {currency}"
+add-notification: "{prefix} &aYour balance has been increased by &e{amount} {symbol} {currency}"
+
+# Take Command
+take-success: "{prefix} &aRemoved &e{amount} {symbol} {currency} &afrom {player}'s balance."
+take-new-balance: "{prefix} &aNew balance: &e{balance} {symbol} {currency}"
+take-notification: "{prefix} &cYour balance has been decreased by &e{amount} {symbol} {currency}"
+
+# Help Menu
+help-header: "&6═══════════════════════════════\n&6        EcoPlus Commands\n&6═══════════════════════════════"
+help-balance: "&a/ecoplus balance [player] &f- Check balance"
+help-baltop: "&a/ecoplus baltop &f- View top richest players"
+help-add: "&b/ecoplus add <player> <amount> &f- Add money"
+help-take: "&b/ecoplus take <player> <amount> &f- Remove money"
+help-reload: "&b/ecoplus reload &f- Reload plugin"
+help-footer: "&6═══════════════════════════════"
+
+# Usage Messages
+usage-add: "{prefix} &cUsage: /ecoplus add <player> <amount>"
+usage-take: "{prefix} &cUsage: /ecoplus take <player> <amount>"
+
+# Error Messages
+insufficient-funds: "{prefix} &c{player} doesn't have enough funds! Current balance: &e{balance} {symbol}"
+insufficient-funds-self: "{prefix} &cInsufficient funds! You need &e{amount} {symbol} &cbut only have &e{balance} {symbol}"
+amount-too-large: "{prefix} &cAmount is too large! Maximum allowed: &e{max}"
+negative-balance-prevented: "{prefix} &cOperation cancelled: This would result in a negative balance."

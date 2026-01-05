@@ -1,0 +1,40 @@
+# ============================================
+#           EcoPlus Plugin Configuration
+#             A plugin by ItzSiden
+# ============================================
+
+# Plugin prefix used in messages
+prefix: "&6[&eEcoPlus&6]&r"
+
+# Currency settings
+currency:
+  name: "Stars"
+  symbol: "⭐"
+  
+# Starting balance for new players
+starting-balance: 0
+
+# Number formatting
+formatting:
+  # Use comma separators (1,000 vs 1000)
+  use-separators: true
+  # Decimal places to show
+  decimal-places: 2
+  
+# Baltop settings
+baltop:
+  # How many players to show
+  top-count: 10
+  # Update interval in seconds (0 = disabled, updates on command)
+  cache-duration: 300
+
+# Security settings
+security:
+  # Maximum balance a player can have (prevents overflow)
+  max-balance: 100000000
+  # Maximum amount per transaction
+  max-transaction: 10000
+  # Minimum transaction amount
+  min-transaction: 1
+  # Enable transaction logging to console
+  log-transactions: true
